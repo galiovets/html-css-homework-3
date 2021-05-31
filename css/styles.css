@@ -291,12 +291,16 @@ footer .logo.studio {
 .team.list-item {
   flex-basis: calc((100% / 4 - var(--li-gap)));
   margin-right: var(--li-gap);
-  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
 }
 
+.team.card {
+  background-color: var(--primary-white-color);
+  padding-top: var(--li-gap);
+  padding-bottom: var(--li-gap);
+}
+
 .team .title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -344,13 +348,10 @@ footer .logo {
 /* footer */
 
 /* filters */
-.filters.container {
-  padding-bottom: 16px;
-}
-
 .buttons.list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .buttons .item:not(:last-child) {
@@ -359,10 +360,6 @@ footer .logo {
 /* filters */
 
 /* portfolio work */
-.work.container {
-  padding-top: 34px;
-}
-
 .work.list {
   display: flex;
   flex-wrap: wrap;
@@ -379,6 +376,8 @@ footer .logo {
 .card {
   padding: 20px 24px;
   border-bottom: 1px solid var(--card-border);
+  border-left: 1px solid var(--card-border);
+  border-right: 1px solid var(--card-border);
 }
 
 .work .title {
